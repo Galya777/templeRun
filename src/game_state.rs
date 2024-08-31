@@ -62,7 +62,7 @@ impl GameState {
 
 impl event::EventHandler for GameState {
     fn update(&mut self, _ctx: &mut Context) -> GameResult {
-        loop{
+        
         // Обновяване на логиката на играта тук
         if self.game_over {
             return Ok(());
@@ -83,7 +83,7 @@ impl event::EventHandler for GameState {
 
         self.check_collisions();
         
-        }
+        
         Ok(())
     
     }
